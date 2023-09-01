@@ -1,0 +1,32 @@
+div.skill-set div.header svg {
+  height: 5rem;
+  width: 5rem;
+  padding: 0.8rem;
+  fill: var(--extra-light-blue);
+  background-color: var(--medium-blue);
+  border-radius: 100px;
+}
+div.skill-set {
+  margin-top: 2rem;
+}
+div.skill-set div.header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+div.skill-set ul {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.8rem;
+}
+
+@media (max-width: 550px) {
+  div.skill-set div.header svg {
+    height: 4rem;
+    width: 4rem;
+    padding: 0.5rem;
+  }
+}

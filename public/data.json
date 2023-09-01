@@ -1,0 +1,238 @@
+{
+  "skills": [
+    {
+      "skillSet": [
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "C++",
+        "PHP",
+        "HTML",
+        "CSS"
+      ],
+      "icon": "language",
+      "name": "Languages",
+      "loadIcon": false
+    },
+    {
+      "skillSet": ["MongoDB", "MySQL"],
+      "icon": "database",
+
+      "name": "Databases",
+      "loadIcon": false
+    },
+    {
+      "skillSet": ["Windows", "MacOS", "Linux"],
+      "icon": "os",
+      "name": "Operating Systems",
+      "loadIcon": false,
+      "currentFocus": "I have started working more with linux based systems."
+    },
+    {
+      "icon": "package",
+      "skillSet": [
+        "ReactJS",
+        "Redux",
+        "NextJS",
+        "React-Router-Dom",
+        "NodeJS",
+        "Express",
+        "jQuery",
+        "Axios",
+        "BcryptJS",
+        "JSON Web Tokens",
+        "Mongoose",
+        "Nodemailer",
+        "Pug",
+        "stripe",
+        "Mapbox"
+      ],
+      "description": "",
+      "name": "Libraries/Frameworks",
+      "loadIcon": false
+    },
+    {
+      "icon": "cloud",
+      "skillSet": ["AWS"],
+      "description": "",
+      "name": "Cloud Platforms",
+      "loadIcon": false,
+      "currentFocus": "I am learning about AWS services and I have started by working with a EC2 instance."
+    },
+    {
+      "skillSet": [
+        "Postman",
+        "Apache",
+        "VS Code",
+        "IntelliJ",
+        "CLion",
+        "MySQLWorkBench",
+        "Figma"
+      ],
+      "description": "",
+      "icon": "environment",
+      "name": "Environments",
+      "loadIcon": false
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "This Website",
+      "logo": "portfolio-logo.png",
+      "summary": "This project was developed by a team of three developers. I have implemented most of the backend, specifically login/sign-up and recipes filtering functionality.",
+      "technologies": ["NextJS", "ReactJS", "CSS", "TypeScript"],
+      "url": "/",
+      "github": "https://github.com/hassan-attar/Fitness-Tracker"
+    },
+    {
+      "id": 2,
+      "title": "Fitness Tracker",
+      "logo": "fitness-tracker.png",
+      "summary": "This project was developed by a team of three developers. I have implemented most of the backend, specifically login/sign-up and recipes filtering functionality.",
+      "technologies": [
+        "PHP",
+        "Jquery",
+        "Apache",
+        "MySQL",
+        "VanillaJS",
+        "HTML",
+        "CSS"
+      ],
+      "url": null,
+      "github": "https://github.com/hassan-attar/Fitness-Tracker"
+    },
+    {
+      "id": 3,
+
+      "title": "Natours API",
+      "logo": "natours-api-logo.png",
+      "summary": "Natours API developed as a RESTful api powered by Express and MongoDB. some features are: geographical filtering, pagination and result filtering, JWT authentication and rule-based authorization",
+      "technologies": ["NodeJS", "Express", "Mongoose", "MongoDB", "JWT"],
+      "url": null,
+      "github": "https://github.com/hassan-attar/Natours-API"
+    },
+    {
+      "id": 4,
+
+      "title": "Natours website",
+      "logo": "natours-website-logo.png",
+      "summary": "Natours is a dynamically rendered website powered by NodeJS and Pug templates. This project was the final project of an online course.",
+      "technologies": [
+        "NodeJS",
+        "Pug Templates",
+        "Express",
+        "Mapbox",
+        "VanillaJS",
+        "CSS"
+      ],
+      "url": null,
+      "github": "https://github.com/hassan-attar/natours"
+    },
+    {
+      "id": 5,
+
+      "title": "Homestay DB",
+      "logo": "homestaydb-logo.png",
+      "summary": "HomestayDB is a homestay database for managing accommodations, contracts, and reviews between Canadian families and international students.",
+      "technologies": ["MySQL", "Apache"],
+      "url": null,
+      "github": "https://github.com/hassan-attar/HomestayDB"
+    }
+  ],
+  "education": {
+    "courses": [
+      "Networks",
+      "Program Design",
+      "Data Structures",
+      "Algorithms",
+      "Object Orientation",
+      "Database",
+      "Unix & Scripting",
+      "JavaScript",
+      "Java",
+      "C++",
+      "Web Design",
+      "Git/Github"
+    ],
+    "degrees": [
+      {
+        "title": "Computer Science Diploma",
+        "where": "Langara College, Vancouver, BC.",
+        "from": "Jan 2022",
+        "to": "Apr 2024",
+        "duration": 2,
+        "GPA": "4.16"
+      },
+      {
+        "title": "Web Development Citation",
+        "where": "Langara College, Vancouver, BC.",
+        "from": "Jan 2023",
+        "to": "Jan 2024",
+        "duration": 1,
+        "GPA": "4.20"
+      }
+    ],
+    "certificates": [
+      {
+        "title": "The Complete JavaScript Course 2023",
+        "url": "https://www.udemy.com/certificate/UC-cee82fdf-454f-4936-b19b-756f7c2bcb67/"
+      },
+      {
+        "title": "Introduction to Object-Oriented Programming with Java",
+        "url": null
+      },
+      {
+        "title": "React - The Complete Guide 2023",
+        "url": "https://www.udemy.com/certificate/UC-9630249f-0926-4fd0-abf6-df19d203e816/"
+      },
+      {
+        "title": "Understanding TypeScript",
+        "url": "https://www.udemy.com/certificate/UC-41901b69-8b05-4251-b197-750f1e300f38/"
+      },
+      {
+        "title": "Node.js, Express, MongoDB & More",
+        "url": "https://www.udemy.com/certificate/UC-818686ac-b522-4d49-a451-0fd707262953/"
+      },
+      {
+        "title": "Build Responsive Real-World Websites with HTML and CSS",
+        "url": "https://www.udemy.com/certificate/UC-433ca6c6-b6dd-439e-a45f-5da502f827d7/"
+      }
+    ]
+  },
+  "aboutMe": {
+    "hobbies": [
+      { "name": "Hiking", "icon": "mountains" },
+      { "name": "Swimming", "icon": "pool" },
+      { "name": "Gym", "icon": "barbell" },
+      { "name": "Music", "icon": "music-notes" },
+      { "name": "Listening to podcasts", "icon": "apple-podcasts" },
+      { "name": "Watching movies", "icon": "movie" },
+      { "name": "Working on new ideas", "icon": "lightbulb" },
+      { "name": "Trying new things", "icon": "smile" },
+      { "name": "Basketball", "icon": "basketball" }
+    ],
+    "about": [
+      {
+        "title": "Passion for Programming",
+        "description": "To me, programming is a journey of continuous growth and intellectual exploration. It's the art of stretching my skills and thinking beyond conventional limits to craft solutions that tackle challenges head-on.",
+        "icon": "heart"
+      },
+      {
+        "title": "Navigating the Road Ahead",
+        "description": "I am driven by a strong passion for problem-solving, a trait I carry proudly into the programming domain. My vision is set on software engineering, with my sights extending into the realm of AI.",
+        "icon": "rocket"
+      },
+      {
+        "title": "Life Beyond the Screen",
+        "description": "I approach life with an easy-going spirit, and the laughter that accompanies my journey is a testament to my love for humor. Yet beneath this exterior lies a wellspring of determination and discipline that propels me in ventures of life.",
+        "icon": "person"
+      },
+      {
+        "title": "Balancing Growth, Learning and Life",
+        "description": "I believe in honing my knowledge through continuous learning, fuelling both personal growth and enriching life's fabric. My life's vision is multidimensional; equilibrium isn't the goal. Instead, I embrace diverse challenges and imbalances, finding balance in the bigger picture.",
+        "icon": "scales"
+      }
+    ]
+  }
+}

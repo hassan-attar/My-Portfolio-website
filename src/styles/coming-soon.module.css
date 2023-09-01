@@ -1,0 +1,42 @@
+section.coming-soon {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 13rem 0 5rem 0;
+  min-height: calc(100vh - 8rem);
+}
+
+.coming-soon .illustration {
+  width: 100%;
+}
+.coming-soon .illustration svg {
+  height: 35rem;
+  width: 100%;
+}
+
+.content h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.content p {
+  margin: 0 25%;
+  margin-bottom: 1rem;
+}
+
+.content h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+@media (max-width: 850px) {
+  .content p {
+    margin: 0 15%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .content p {
+    margin: 0 5%;
+    margin-bottom: 1rem;
+  }
+}

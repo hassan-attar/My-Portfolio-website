@@ -1,0 +1,132 @@
+/* GENERAL STYLE */
+.header {
+  /* background: var(--light-blue); */
+  background: linear-gradient(
+    90deg,
+    rgba(254, 206, 176, 1) 0%,
+    rgba(125, 146, 250, 1) 100%
+  );
+  /* background-color: #dee5fc; */
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: var(--mobile-header-height);
+}
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--screen-edge-padding);
+}
+.header button.menu {
+  z-index: 100;
+}
+
+.header button.menu svg {
+  height: 5rem;
+  width: 5rem;
+  fill: #29298b;
+}
+
+/* MOBILE */
+.header nav.open {
+  background-color: var(--header-bg-color);
+  clip-path: circle(calc(100vh + 100vw) at 100% 0%);
+}
+
+.header img.logo {
+  height: 6rem;
+  width: auto;
+  z-index: 10;
+}
+.logo-btn {
+  cursor: pointer;
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+.header nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  clip-path: circle(0px at 100% 0%);
+  transition: all 1s;
+}
+
+.header nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.header nav ul li button {
+  background: none;
+  background-color: #f5c4b3;
+  color: var(--extra-dark-orange);
+  width: 24rem;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.header ul li button.active-link {
+  opacity: 1;
+}
+
+/* Desktop */
+@media (min-width: 800px) {
+  .header {
+    height: var(--desktop-header-height);
+  }
+  .header button.menu {
+    display: none;
+  }
+
+  .header img.logo {
+    height: 8rem;
+    width: auto;
+  }
+  .header nav {
+    position: relative;
+    width: auto;
+    height: auto;
+    z-index: 5;
+    clip-path: none;
+  }
+
+  .header nav ul {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .header nav ul li button {
+    border-radius: 40px;
+    width: 14rem;
+    padding: 1rem 0;
+  }
+  .header nav ul li button {
+    opacity: 0.5;
+  }
+}

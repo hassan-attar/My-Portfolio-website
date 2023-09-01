@@ -1,0 +1,133 @@
+/* GENERAL */
+
+section.education {
+  background-color: #ffe9d5b4;
+}
+section.education > div {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: auto 1fr;
+  row-gap: 2rem;
+}
+
+.education h3 {
+  margin-left: 1px;
+}
+
+section.education div.content {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  row-gap: 2rem;
+}
+.GPA {
+  font-size: 1.5rem;
+}
+
+section.education .content .degrees {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 1.5rem;
+}
+.degrees h6 {
+  font-weight: 600;
+}
+
+.degrees div > span {
+  margin-top: 0.2rem;
+}
+
+.degrees > div {
+  display: flex;
+  flex-direction: column;
+  background-color: #cbccfe8e;
+  box-shadow: 0 10px 25px #0000002f;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.degrees div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.credentials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.courses ul {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+}
+.courses ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.courses ul span {
+  display: inline-block;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.certificates ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.certificates ul svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: var(--dark-orange);
+}
+.certificates ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-items: self-start;
+  column-gap: 1rem;
+}
+.certificates ul li a {
+  display: block;
+  font-weight: 400;
+}
+
+@media (max-width: 860px) {
+  .courses ul {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .credentials {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .degrees div > span {
+    margin-top: 0.2rem;
+  }
+
+  .courses ul span {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .education h3 {
+    padding-top: 3px;
+  }
+}

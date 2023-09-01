@@ -1,0 +1,34 @@
+.skillIconGroup {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.skillIconGroup li {
+  border: 2px solid var(--dark-blue);
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
+.skillGroup li {
+  border: 2px solid var(--dark-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.skillGroup {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 705px) {
+  .skillGroup li {
+    border: 2px solid var(--dark-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+}
