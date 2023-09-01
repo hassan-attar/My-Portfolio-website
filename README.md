@@ -16,6 +16,8 @@ You can access the website <a href="https://hassanattar.com">here</a>.
 
 - **Component-Based Architecture:** Each section of the website is componentized, enabling seamless integration and easy maintenance. This modular approach makes it simple to update or expand individual sections without affecting the entire website.
 
+- **Sentry for logging Client Errors:** This website will get a log of the client errors for debugging purposes and make sure that the visitors will have an error free experience.
+
 ## Using This Code for Your Portfolio
 
 Feel free to use the codebase of this portfolio website as a template for your own portfolio site. I encourage developers to learn from and build upon this project. However, I kindly request that you follow these guidelines:
