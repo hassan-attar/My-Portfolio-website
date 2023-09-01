@@ -14,7 +14,7 @@ export default function Home() {
         <title>Hassan Attar - Portfolio</title>
         <meta
           name="description"
-          content="I'm a Software Developer with expertise in JavaScript, TypeScript, Java, C++, PHP, HTML, CSS, and various web development technologies. Explore my portfolio showcasing projects like Natours API, Fitness Tracker and more."
+          content="I'm a Web Developer with expertise in JavaScript, TypeScript, Java, C++, PHP, HTML, CSS, and various web development technologies. Explore my portfolio showcasing projects like Natours API, Fitness Tracker and more."
         />
 
         <meta
@@ -26,7 +26,7 @@ export default function Home() {
         <meta property="og:title" content="Hassan Attar - Portfolio" />
         <meta
           property="og:description"
-          content="I'm a Software Developer with expertise in JavaScript, TypeScript, Java, C++, PHP, HTML, CSS, and various web development technologies. Explore my portfolio showcasing projects like Natours API, Fitness Tracker and more."
+          content="I'm a Web Developer with expertise in JavaScript, TypeScript, Java, C++, PHP, HTML, CSS, and various web development technologies. Explore my portfolio showcasing projects like Natours API, Fitness Tracker and more."
         />
         <meta
           property="og:image"
@@ -37,7 +37,7 @@ export default function Home() {
         <meta property="twitter:title" content="Hassan Attar - Portfolio" />
         <meta
           property="twitter:description"
-          content="I'm a Software Developer with expertise in JavaScript, TypeScript, Java, C++, PHP, HTML, CSS, and various web development technologies. Explore my portfolio showcasing projects like Natours API, Fitness Tracker and more."
+          content="I'm a Web Developer with expertise in JavaScript, TypeScript, Java, C++, PHP, HTML, CSS, and various web development technologies. Explore my portfolio showcasing projects like Natours API, Fitness Tracker and more."
         />
         <meta
           property="twitter:image"
