@@ -1,38 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio Website
 
-## Getting Started
+Welcome to my portfolio website! This website showcases my skills, projects, and experience. The website is built using React and Next.js, providing a smooth and responsive user experience. The entire website is designed as a single-page application, resembling a one-page resume.
 
-First, run the development server:
+You can access the website <a href="https://hassanattar.com">here</a>.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **React and Next.js:** The website is built using React and Next.js.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **JSON Data Management:** All the data presented on the website is managed using JSON files. This approach eliminates the need for a database and simplifies the data handling process.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Type Safety with TypeScript:** TypeScript is used to ensure type safety throughout the project. This enhances code quality and helps prevent runtime errors by catching type-related issues during development.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **CSS Modules:** Styling is implemented using CSS Modules, which allows for scoped styling and prevents class name collisions. This approach keeps the styling organized and maintainable.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Component-Based Architecture:** Each section of the website is componentized, enabling seamless integration and easy maintenance. This modular approach makes it simple to update or expand individual sections without affecting the entire website.
 
-## Learn More
+## Using This Code for Your Portfolio
 
-To learn more about Next.js, take a look at the following resources:
+Feel free to use the codebase of this portfolio website as a template for your own portfolio site. I encourage developers to learn from and build upon this project. However, I kindly request that you follow these guidelines:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Provide Attribution:** Please include a clear and visible reference to my name and my original website in your portfolio. You can include a footer or a dedicated section acknowledging the source of inspiration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Reach Out:** I'd love to see how you've used and customized this code for your own portfolio. Feel free to send me an email at [info@hassanattar.com](mailto:info@hassanattar.com) to share your work or discuss any questions you may have.
