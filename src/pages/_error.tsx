@@ -1,13 +1,13 @@
 import Icon from "@/components/icons/Icon";
-import Wrapper from "../components/layout-elements/Wrapper";
-import classes from "../styles/404.module.css";
+import Wrapper from "@/components/layout-elements/Wrapper";
 import Head from "next/head";
+import classes from "../styles/404.module.css";
 
-export default function Error404() {
+function Error() {
   return (
     <>
       <Head>
-        <title>Page Not Found</title>
+        <title>Error - try again!</title>
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <section className={classes["not-found"]}>
@@ -16,11 +16,13 @@ export default function Error404() {
             <Icon name="not-found" />
           </div>
           <div className={classes.content}>
-            <h4 className="smaller">Page not found!</h4>
-            <p>Sorry, the page you are looking for doesn&apos;t exist.</p>
+            <h4 className="smaller">Something went wrong!</h4>
+            <p>Sorry, an error occurred. Please try again later.</p>
           </div>
         </Wrapper>
       </section>
     </>
   );
 }
+
+export default Error;

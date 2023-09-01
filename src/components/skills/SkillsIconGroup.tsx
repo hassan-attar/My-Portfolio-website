@@ -21,7 +21,7 @@ const SkillsIconGroup = ({
       {loadByIcon && (
         <ul className={classes.skillIconGroup}>
           {iconNames.map((iconName) => (
-            <li>
+            <li key={iconName}>
               <Icon name={iconName.toLowerCase()} key={iconName} />
             </li>
           ))}

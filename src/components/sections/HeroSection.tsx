@@ -16,7 +16,7 @@ const HeroSection = () => {
           <br />
           <p className="larger">
             Hello 👋,
-            <br /> I'm Hassan, a web/software developer based in Vancouver,
+            <br /> I&apos;m Hassan, a web/software developer based in Vancouver,
             Canada. Welcome to my portfolio website.
           </p>
         </div>

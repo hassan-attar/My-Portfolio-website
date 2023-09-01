@@ -3,7 +3,7 @@ import Icon from "@/components/icons/Icon";
 import classes from "../styles/coming-soon.module.css";
 import Head from "next/head";
 
-export default function () {
+export default function ComingSoon() {
   return (
     <>
       <Head>
@@ -18,11 +18,11 @@ export default function () {
           <div className={classes.content}>
             <h4 className="smaller">Coming Soon!</h4>
             <p>
-              I'm currently working on deploying my projects and showcasing my
-              work.
+              I&apos;m currently working on deploying my projects and showcasing
+              my work.
             </p>
             <p>
-              I'm considering to either deploy all the projects on a{" "}
+              I&apos;m considering to either deploy all the projects on a{" "}
               <strong>AWS EC2 instance</strong> or use serverless environments
               like <strong>AWS Elastic Beanstalk</strong> and{" "}
               <strong>AWS Lightsail</strong>.
