@@ -35,8 +35,8 @@ const Footer = () => {
           </ul>
         </div>
         <p>
-          &copy; <span>{new Date().getFullYear()}</span> Hassan Attar All Rights
-          Reserved.
+          &copy; <span>{new Date().getFullYear()}</span> Hassan Attar. All
+          Rights Reserved.
         </p>
       </div>
       <a
