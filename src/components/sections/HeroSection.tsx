@@ -3,7 +3,6 @@ import Wrapper from "../layout-elements/Wrapper";
 import Image from "next/image";
 import heroImage from "../../../public/home-hero.png";
 import { useNav } from "../hooks/useNav";
-import Icon from "../icons/Icon";
 
 const HeroSection = () => {
   const ref = useNav("Hero");
@@ -21,7 +20,12 @@ const HeroSection = () => {
           </p>
         </div>
         <div className={classes.image}>
-          <Image src={heroImage} height={400} alt={"hero image"} />
+          <Image
+            src={heroImage}
+            height={400}
+            alt={"hero image"}
+            priority={true}
+          />
         </div>
       </Wrapper>
     </section>

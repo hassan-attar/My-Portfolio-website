@@ -1,6 +1,7 @@
 import Image from "next/image";
 import classes from "./ProjectCard.module.css";
 import { Project } from "@/util/types";
+import Link from "next/link";
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
@@ -29,7 +30,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
           <a href={project.github} target="_blank">
             Github
           </a>
-          <a href={project.url || "/coming-soon"}>Launch</a>
+          {project.url && (
+            <a href={project.url || "/coming-soon"} target="_blank">
+              Launch
+            </a>
+          )}
+          {!project.url && <Link href={"/coming-soon"}>Launch</Link>}
         </div>
       </div>
     </div>

@@ -86,8 +86,8 @@
   transition: all 0.4s ease;
 }
 
-.header ul li button.active-link {
-  opacity: 1;
+.header ul li button.deActive-link {
+  opacity: 0.5;
 }
 
 /* Desktop */
@@ -125,8 +125,6 @@
     border-radius: 40px;
     width: 14rem;
     padding: 1rem 0;
-  }
-  .header nav ul li button {
-    opacity: 0.5;
+    opacity: 1;
   }
 }

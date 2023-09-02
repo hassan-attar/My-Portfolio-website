@@ -1,4 +1,5 @@
-import data from "../../public/data.json";
+import fs from "fs/promises";
+import path from "path";
 
 import HeroSection from "@/components/sections/HeroSection";
 import SkillsSection from "@/components/sections/SkillsSection";
@@ -6,8 +7,9 @@ import PortfolioSection from "@/components/sections/PortfolioSection";
 import EducationSection from "@/components/sections/EducationSection";
 import AboutMeSection from "@/components/sections/AboutMeSection";
 import Head from "next/head";
+import { PortfolioData } from "@/util/types";
 
-export default function Home() {
+export default function Home({ data }: { data: PortfolioData }) {
   return (
     <>
       <Head>
@@ -54,3 +56,13 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const filePath = path.join(process.cwd(), "data", "data.json");
+  const jsonData = await fs.readFile(filePath, "utf-8");
+  const appData = JSON.parse(jsonData);
+
+  return {
+    props: { data: appData },
+  };
+};

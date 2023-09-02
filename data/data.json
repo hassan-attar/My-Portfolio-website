@@ -1,4 +1,9 @@
 {
+  "myData": {
+    "email": "info@hassanattar.com",
+    "myName": "Hassan Attar",
+    "myRole": "Web Developer"
+  },
   "skills": [
     {
       "skillSet": [

@@ -2,13 +2,13 @@ import Image from "next/image";
 import logo from "../../../public/ha-logo.png";
 import classes from "./Header.module.css";
 import { MouseEventHandler, useContext, useState } from "react";
-import Link from "next/link";
 import Icon from "../icons/Icon";
 import { NavContext } from "../context/NavContext";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
   const { activeLinkId } = useContext(NavContext);
-  console.log(activeLinkId);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navLinks = ["Skills", "Portfolio", "Education", "About me"];
 
@@ -24,26 +24,47 @@ const Header = () => {
       sectionElement.getBoundingClientRect().top +
       window.scrollY -
       headerHeight;
-    setIsNavOpen((prevState) => !prevState);
+    setIsNavOpen(false);
     window.scrollTo({
       top: targetScrollPosition,
       behavior: "smooth",
     });
   };
 
-  const linkClickHandler: MouseEventHandler<HTMLButtonElement> = (e) => {
-    let sectionId;
-    sectionId = (e.target as HTMLButtonElement).textContent
-      ?.toLowerCase()
-      .replace(" ", "-");
-    scrollToView(sectionId!);
-  };
+  const linkClickHandler: MouseEventHandler<HTMLButtonElement> =
+    async function (e) {
+      let sectionId;
+      const curPath = router.pathname;
+
+      sectionId = (e.target as HTMLButtonElement).textContent
+        ?.toLowerCase()
+        .replace(" ", "-");
+      if (
+        curPath == "/404" ||
+        curPath == "/_error" ||
+        curPath == "/coming-soon"
+      ) {
+        await router.replace(`/`);
+      }
+      scrollToView(sectionId!);
+    };
 
   return (
     <header className={`${classes.header}`}>
       <div>
         <button
-          onClick={() => scrollToView("hero")}
+          onClick={() => {
+            const curPath = router.pathname;
+            if (
+              curPath == "/404" ||
+              curPath == "/_error" ||
+              curPath == "/coming-soon"
+            ) {
+              router.replace("/");
+            } else {
+              scrollToView("hero");
+            }
+          }}
           className={classes["logo-btn"]}
         >
           <Image src={logo} alt="Hassan Attar Logo" className={classes.logo} />
@@ -53,6 +74,7 @@ const Header = () => {
           {!isNavOpen && <Icon name="menu" />}
           {isNavOpen && <Icon name="close" />}
         </button>
+
         <nav className={isNavOpen ? classes.open : ""}>
           <ul>
             {navLinks.map((link) => (
@@ -60,8 +82,10 @@ const Header = () => {
                 <button
                   onClick={linkClickHandler}
                   className={`${
-                    activeLinkId == link || activeLinkId == "Hero"
-                      ? classes["active-link"]
+                    activeLinkId &&
+                    activeLinkId != link &&
+                    activeLinkId != "Hero"
+                      ? classes["deActive-link"]
                       : ""
                   } smaller`}
                 >

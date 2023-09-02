@@ -17,7 +17,10 @@ function Error() {
           </div>
           <div className={classes.content}>
             <h4 className="smaller">Something went wrong!</h4>
-            <p>Sorry, an error occurred. Please try again later.</p>
+            <p>
+              Sorry, an error occurred. I have been notified and the issue will
+              be resolved shortly. Please try again later.
+            </p>
           </div>
         </Wrapper>
       </section>
