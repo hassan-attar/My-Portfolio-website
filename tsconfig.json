@@ -21,7 +21,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/pages/_app.js",
+    "src/pages/_app.tsx",
     "src/components/layout-elements/Wrapper.js"
   ],
   "exclude": ["node_modules"]

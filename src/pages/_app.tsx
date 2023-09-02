@@ -4,7 +4,13 @@ import Footer from "@/components/layout-elements/Footer";
 import Head from "next/head";
 import React from "react";
 import NavProvider from "@/components/context/NavContext";
-export default function App({ Component, pageProps }) {
+export default function App({
+  Component,
+  pageProps,
+}: {
+  Component: React.ComponentType;
+  pageProps: Record<string, any>;
+}) {
   return (
     <>
       <Head>
