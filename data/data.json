@@ -85,7 +85,7 @@
       "id": 1,
       "title": "This Website",
       "logo": "portfolio-logo.png",
-      "summary": "This project was developed by a team of three developers. I have implemented most of the backend, specifically login/sign-up and recipes filtering functionality.",
+      "summary": "The website is built using React and Next.js, providing a smooth and responsive user experience. The entire website is designed as a single-page application, resembling a one-page resume.",
       "technologies": ["NextJS", "ReactJS", "CSS", "TypeScript"],
       "url": "/",
       "github": "https://github.com/hassan-attar/My-Portfolio-website"

@@ -14,7 +14,9 @@ const SkillsIconGroup = ({
       {!loadByIcon && (
         <ul className={classes.skillGroup}>
           {iconNames.map((iconName) => (
-            <li key={iconName}>{iconName}</li>
+            <li key={iconName} className="smaller">
+              {iconName}
+            </li>
           ))}
         </ul>
       )}
