@@ -2,13 +2,13 @@
 
 Welcome to my portfolio website! This website showcases my skills, projects, and experience. The website is built using React and Next.js, providing a smooth and responsive user experience. The entire website is designed as a single-page application, resembling a one-page resume.
 
-You can access the website <a href="https://hassanattar.com">here</a>.
+You can access the website <a href="https://www.hassanattar.com">here</a>.
 
 ## Features
 
 - **React and Next.js:** The website is built using React and Next.js.
 
-- **JSON Data Management:** All the data presented on the website is managed using JSON files. This approach eliminates the need for a database and simplifies the data handling process.
+- **JSON Data Management:** All the data presented on the website is managed using JSON files. This approach eliminates the need for a database and simplifies the data handling process. The data file is only read at build-time and then cached on the server.
 
 - **Type Safety with TypeScript:** TypeScript is used to ensure type safety throughout the project. This enhances code quality and helps prevent runtime errors by catching type-related issues during development.
 
@@ -16,7 +16,7 @@ You can access the website <a href="https://hassanattar.com">here</a>.
 
 - **Component-Based Architecture:** Each section of the website is componentized, enabling seamless integration and easy maintenance. This modular approach makes it simple to update or expand individual sections without affecting the entire website.
 
-- **Sentry for logging Client Errors:** This website will get a log of the client errors for debugging purposes and to make sure that the visitors will have an error free experience.
+- **Sentry for Monitoring and Statistics:** This website will get a log of the client errors for debugging purposes and to make sure that the visitors will have an error free experience.
 
 ## Using This Code for Your Portfolio
 
