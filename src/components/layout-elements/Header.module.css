@@ -22,6 +22,7 @@
   margin: 0 auto;
   padding: 0 var(--screen-edge-padding);
 }
+
 .header button.menu {
   z-index: 100;
 }
@@ -32,6 +33,25 @@
   fill: #29298b;
 }
 
+.header nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  clip-path: circle(0px at 100% 0%);
+  transition: all 1s ease;
+}
+.header nav ul li button {
+  opacity: 0;
+  touch-action: none;
+  transition: all 0.7s ease;
+}
+.header nav.open ul li button {
+  opacity: 1;
+  touch-action: auto;
+}
 /* MOBILE */
 .header nav.open {
   background-color: var(--header-bg-color);
@@ -49,17 +69,6 @@
 
 .blurred {
   filter: blur(3px);
-}
-
-.header nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-  clip-path: circle(0px at 100% 0%);
-  transition: all 1s;
 }
 
 .header nav ul {
@@ -122,6 +131,7 @@
     width: 14rem;
     padding: 1rem 0;
     opacity: 1;
+    touch-action: auto;
   }
   .header ul li button.deActive-link {
     opacity: 0.5;
