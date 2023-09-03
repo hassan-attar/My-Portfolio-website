@@ -67,6 +67,7 @@ div.pagination button.active-page {
     display: grid;
     margin-top: 2rem;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     row-gap: 2rem;
   }
   section.portfolio div.projects > div:nth-child(3n) {
