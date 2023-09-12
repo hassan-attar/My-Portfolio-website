@@ -35,7 +35,15 @@ const ProjectCard = ({ project }: { project: Project }) => {
               Launch
             </a>
           )}
-          {!project.url && <Link href={"/coming-soon"}>Launch</Link>}
+          {!project.url && (
+            <Link
+              href={"/coming-soon"}
+              className={classes.disabled}
+              onClick={(e) => e.preventDefault()}
+            >
+              Launch
+            </Link>
+          )}
         </div>
       </div>
     </div>
